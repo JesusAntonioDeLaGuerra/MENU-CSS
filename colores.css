@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 10px;
+    text-align: center;
+}
+div{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: rgb(101, 1, 129);
+    margin: 10px;
+    color:rgb(0, 0, 0);
+    padding: 15px;
+}
+
+.ingles{
+    background: yellow;
+}
+.rgb{
+    background: rgb(1, 183, 207);
+}
+.rgb2{
+    background: rgb(100%, 20%, 50%);
+}
+.rgb3{
+    background: rgba(188, 49, 49, 0.5);
+}
+.hexadecimal{
+    background: #FF01FF ;
+}
+.hexadecimal2{
+    background: F00;
+}
+.horizontal{
+    background: linear-gradient(to right, #ee00ff, #0026ff);
+}
+.vertical{
+    background: linear-gradient(to bottom, #02c75e, #1E90FF);
+}
+.radial{
+    background: radial-gradient(circle, #ff044f, #1E90FF);
+}

@@ -1,0 +1,105 @@
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box ;
+}
+div{
+    display: inline-block;
+    width:100px ;
+    height:100px ;
+    background-color:rgb(231, 145, 255) ;
+    margin:10px ;
+    color:rgb(0, 0, 0);
+    padding: 10px;
+}
+#cajita1{
+    border-width:thin;
+    border-style: dotted;
+    border-color: blue red;
+}**{
+    border-width:medium;
+    border-style: dotted;
+    border-color: red green yellow;
+}
+#cajita3{
+    border-width:thick;
+    border-style: dotted;
+    border-color: pink red yellow blue ;
+}
+#cajita4{
+    border:thin dotted rgb(0, 0, 0);
+}
+#cajita5{
+    border:10px hidden rgb(0, 0, 0);
+}
+#cajita6{
+    border:10px dotted rgb(0, 0, 0);
+}
+#cajita7{
+    border:10px dashed rgb(0, 0, 0);
+}
+#cajita8{
+    border:10px solid rgb(0, 0, 0);
+}
+#cajita9{
+    border:10px double rgb(0, 0, 0);
+}
+#cajita10{
+    border:10px groove rgb(0, 0, 0);
+}
+#cajita11{
+    border:10px ridge rgb(4, 4, 0);
+}
+#cajita12{
+    border:10px inset rgb(0, 0, 0);
+}
+#cajita13{
+    border:10px outset rgb(0, 0, 0);
+}
+#cajita14{
+    border-top: 20px solid greenyellow;
+    border-bottom:15px double blue;
+    border-left:10px dotted red ;
+    border-right:7px dashed yellow ;
+}
+#cajita15 {
+    font-family: Jost, sans-serif;
+    font-size: 1rem;
+  
+    padding: 1rem 2rem;
+    background: none;
+    color: #000;
+  
+    border-image-source: linear-gradient(indigo, purple, hotpink);
+    border-image-slice: 1 1 1 1;
+    border-image-width: 0.25rem;  
+}
+#cajita16 {
+    --timing: linear(0, 0.3, 0.75, 1);
+  
+    font-family: Jost, sans-serif;
+    font-size: 0.5rem;
+  
+    padding: 1rem 2rem;
+    background: none;
+    color: #000;
+  
+    border-image-source: conic-gradient(from var(--a), indigo, purple, hotpink);
+    border-image-slice: 1 1 1 1;
+    border-image-width: 0.25rem;
+  
+    animation: move 1s infinite var(--timing);
+  
+  
+  }
+  
+  @keyframes move {
+    from { --a: 0deg; }
+    to { --a: 360deg; }
+  }
+  
+  @property --a {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0deg;
+  }
